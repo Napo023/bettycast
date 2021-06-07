@@ -1,0 +1,119 @@
+<div class="card shadow mb-12">
+    <div class="card-header bg-warning py-3">
+        <h6 class="m-0 font-weight-bold  text-center text-white">ELIMINAR USUARIOS</h6>
+    </div>
+    <div class="card-body">
+        <div class="form-row">
+           
+            <div class="card-body">
+                <form>       
+                    <div class="form-row">          
+                        <div class="form-group col-md-6">
+                            <label for="rol-access">Seleccione el usuario que desea eliminar</label>
+                            <!--<sup>Al eliminar al usuario, no se perderan los trabajos que este usuario haya realizado</sup>-->
+                            <select id="rol-access" class="form-control">
+                            <option selected>Seleccione...</option>
+                            <option>{{_id.${users}}}</option>
+                            <option>{{_id.${users}}}</option>
+                            </select>
+                        </div>  
+                  </div>
+                  <a type="submit" class="btn btn-danger" data-toggle="modal" data-target="#deleted_user" href="#">Eliminar</a>
+                </form>
+               
+              </div>
+          </div>
+          
+    </div>
+</div>
+
+<hr>
+    <div class="card shadow mb-12">
+        <div class="card-header bg-secondary py-3">
+            <h6 class="m-0 font-weight-bold  text-center text-white">USUARIOS ELIMINADOS</h6>
+        </div>
+        <div class="table-responsive"> 
+            <div class="input-group col-lg-5 mb-4 mt-1 menu-right float-right">
+                <input type="text" class="form-control bg-light border-0 " placeholder="Search for..."
+                    aria-label="Search" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                    </button>
+                </div>
+            </div>
+        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0" >
+            <thead>
+                <tr>
+                    <th>Usuario</th>
+                    <th>Nombre</th>
+                    <th>Cedula</th>
+                    <th>Cargo</th>                    
+                    <th>Unidad Administrativa</th>
+                    <th>Rol de usuario</th>
+                    <th>Fecha de creación</th>
+                    <th>Fecha de eliminaci&oacute;n</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th>Usuario</th>
+                    <th>Nombre</th>
+                    <th>Cedula</th>
+                    <th>Cargo</th>                   
+                    <th>Unidad Administrativa</th>
+                    <th>Rol de usuario</th>
+                    <th>Fecha de creación</th>
+                    <th>Fecha de eliminaci&oacute;n</th>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>LorenBe22</td>
+                    <td>Lorena Bone</td>
+                    <td>0000000000</td>
+                    <td>Educadora</td>                   
+                    <td>CDH</td>
+                    <td>Administrador</td>
+                    <td>2019/07/25</td>
+                    <td>2021/09/03</td>
+                </tr>
+                <tr>
+                    <td>LorenBe22</td>
+                    <td>Lorena Bone</td>
+                    <td>1155480000</td>
+                    <td>Educadora</td>
+                    <td>CBB</td>
+                    <td>Invitado</td>
+                    <td>2019/07/25</td>
+                    <td>2022/07/25</td>
+                </tr>
+               
+            </tbody>
+        </table>
+    </div>
+    </div>
+     <!-- Logout Modal-->
+     <div class="modal fade" id="deleted_user" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+     <div class="modal-dialog" role="document">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalLabel">ESTAS SEGURO/A?</h5>
+                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">×</span>
+                 </button>
+             </div>
+             <div class="modal-body">Estas seguro/a que deseas eliminar a este usuario?.</div>
+             <div class="modal-footer">
+                 <button class="btn btn-light" type="button" data-dismiss="modal">No, cancelar</button>
+                 <a class="btn btn-danger" href="index.html">Si, eliminar </a>
+             </div>
+         </div>
+     </div>
+ </div>
+    <script src="../../../public/vendor/jquery/jquery.min.js"></script>
+    <script src="../../../public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    
+    

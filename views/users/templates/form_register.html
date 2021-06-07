@@ -1,0 +1,81 @@
+
+
+                
+                    <!-- form -->
+                    
+                    <div class="card mb-12 ">
+                      <div class="card-header font-weight-bold text-primary text-uppercase mb-1">
+                          registro de labores
+                      </div>
+                      <div class="card-body">
+                        <form>
+                          <div class="form-row">
+                            <div class="form-group col-md-6 text-uppercase">
+                              <label for="add-name-job">Nombres:</label>
+                              <input type="text" class="form-control" id="add-name-job" placeholder="nombres...">
+                            </div>
+                            <div class="form-group col-md-6 text-uppercase">
+                              <label for="add-lastname-job">Apellidos:</label>
+                              <input type="text" class="form-control" id="add-lastname-job" placeholder="apellidos..">
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6 text-uppercase">
+                              <label for="add-cedula-job">Cedula:</label>
+                              <input type="number" class="form-control" id="add-cedula-job" placeholder="cedula.." maxlength="10" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                            </div>
+                            <div class="form-group col-md-6 text-uppercase">
+                              <label for="add-date-job">Fecha:</label>
+                              <input type="date" class="form-control" id="add-date-job" placeholder="fecha...">
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="add-united-job">Unidad admiistrativa</label>
+                              <select id="add-united-job" class="form-control">
+                                <option selected>Seleccione...</option>
+                                <option>Unidad Infantil</option>
+                              </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="add-rol-job">Cargo</label>
+                              <select id="add-rol-job" class="form-control">
+                                <option selected>Seleccione...</option>
+                                <option>Educadora</option>
+                                <option>xxxxxxxxxxxxx</option>
+                              </select>
+                            </div>
+                            
+                            <div class="form-group col-md-6">
+                              <label for="add-start-job">Hora de inicio</label>
+                              <input type="time" class="form-control" id="add-start-job" placeholder="Hora inicial">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="add-end-job">Hora de salida</label>
+                              <input type="time" class="form-control" id="add-end-job" placeholder="Hora final">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="add-boss-job">Selecciones su jefe inmediato</label>
+                              <select id="add-boss-job" class="form-control">
+                                <option selected>Seleccione...</option>
+                                <option>xxxxxxxxxxxxx</option>
+                                <option>xxxxxxxxxxxxx</option>
+                              </select>
+                            </div>
+                          </div>                                                   
+                                                    
+                          <div class="form-group">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="gridCheck">
+                              <label class="form-check-label" for="gridCheck">
+                                Check me out
+                              </label>
+                            </div>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Agregar</button>
+                        </form>
+                      </div>
+                  </div>
+
+               
+ 
